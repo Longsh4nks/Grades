@@ -13,17 +13,6 @@ namespace Grades
         {
             grades.Add(grade);
         }
-        public void DeleteGrade(int arrPosition)
-        {
-            grades.RemoveAt(arrPosition);
-        }
-        public void ViewGrades()
-        {
-           foreach (float grade in grades)
-            {
-                Console.WriteLine(grade);
-            }
-        }
         public GradeStats ComputeStats()
         {
             GradeStats stats = new GradeStats();
